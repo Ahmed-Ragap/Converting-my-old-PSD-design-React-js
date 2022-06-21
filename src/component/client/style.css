@@ -1,0 +1,68 @@
+* {
+  -webkit-box-sizing: border-box;
+  -os-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  outline: none !important;
+  text-transform: capitalize !important;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+}
+
+/*start variables elements to this site*/
+/*
+  $pry-co: #00FFC6;
+$sec-co: #ff5500;
+  $bg-co: #30AADD;
+*/
+/*declare site color*/
+/*end site elements color*/
+.client .container h2 {
+  font-weight: bold;
+  display: inline-block;
+}
+.client .container h2::after {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  border-radius: 10px 5px;
+  background-color: #F79E02;
+  z-index: -1;
+}
+
+.client {
+  overflow: hidden;
+}
+.client .container .row .top_info img {
+  height: 60px;
+}
+.client .container .row .main {
+  border-radius: 20px;
+  background-color: rgba(0, 116, 225, 0.5);
+  height: 100%;
+}
+.client .container .row .main .top_info img {
+  height: 60px;
+}
+.client .container .row .main .top_info .left__ h5 {
+  font-weight: bold;
+}
+.client .container .row .main .top_info .left__ span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.client .container .row .main h4 {
+  color: #ffffff;
+}
+.client .container .row .main p {
+  color: rgba(255, 255, 255, 0.8);
+}

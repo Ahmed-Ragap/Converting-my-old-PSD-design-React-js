@@ -1,0 +1,43 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            //   "savePath": "./public/css"
+        }
+        // {
+        //     "extensionName": ".css",
+        //     "format": "compressed",
+     
+        // }
+    ],
+  
+    "liveSassCompile.settings.generateMap": false,
+    //autoprefix, will auto add perfix like -webkit- -moz-..
+    "liveSassCompile.settings.autoprefix": [
+
+        "> 1%",
+        "last 2 versions"
+    ],
+    "liveSassCompile.settings.forceBaseDirectory": " ",
+    "liveSassCompile.settings.includeItems": [
+    
+    ],
+    "window.zoomLevel": 1,
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "compile-hero.config": "",
+    "explorer.confirmDelete": false,
+    // "compile-hero.generate-minified-css": true,
+    "compile-hero.javascript-output-directory":"",
+    "compile-hero.generate-minified-css-only": false,
+    "compile-hero.notification-toggle": false,
+    "css.format.spaceAroundSelectorSeparator": true,
+    "less.lint.important": "warning",
+    "scss.format.spaceAroundSelectorSeparator": true,
+    "files.associations": {
+        "*.scss": "scss"
+    },
+    "liveServer.settings.fullReload": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    // "compile-hero.javascript-output-directory": "./"
+}

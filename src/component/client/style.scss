@@ -1,0 +1,55 @@
+ 
+// start client says
+.client{
+    overflow: hidden;
+    .container{
+      h2{
+        @extend  %heading;
+      }
+      .row{
+        .top_info{
+          // display: flex;
+           img{
+          height: 60px;
+        } 
+        }
+       
+              .main{
+                @include border-R(20px);
+                background-color:rgba($bg-co, .5);
+                height: 100%;
+                .top_info{
+                       img{
+                  height: 60px;
+                }
+                .left__{
+                  h5{
+                    font-weight: bold;
+  
+                  }
+                  span{
+                    font-size: $p-font - 2px;
+                    color:rgba($tit-co, .7);
+                  }
+                }
+                }
+           
+                h4{
+                  // font-weight: bold;
+                  color:$tit-co;
+  
+                }
+                p{
+                  color:rgba($tit-co, .8)
+                }
+              }
+       
+          // .row{
+  
+          // }
+      }
+    }
+  }
+  
+  
+  

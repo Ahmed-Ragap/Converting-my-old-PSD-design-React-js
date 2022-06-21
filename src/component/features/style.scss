@@ -1,0 +1,101 @@
+
+//start top_landpage
+.top_landpage{
+  @extend %main-div;
+  background-image: url(../../img/6.jpg);
+  background-attachment: fixed ;
+  min-height: 50vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid; 
+  place-items: center;
+  .overlay{
+      @extend %over;
+      background-color:rgba($sec-co, .7) !important;
+  }
+  .main{
+    max-width: 70vw;
+    h2{
+
+    }
+    p{
+      color:#eee;
+    }
+  }
+} 
+// start features 
+.fetures{
+  box-shadow: 1px -70px 72px 27px #fff;
+  z-index: 2;
+    .container{
+      .title{
+        @extend  %heading;
+
+      }
+      .row{
+        .col-md-6{
+          .main{
+            img{
+              height: 200px;
+              &:hover{
+                cursor:url('../../img/feture_1.png'), auto;
+
+              }
+
+            }
+            h3.heading{
+
+            }
+            p{
+              display: block;
+              margin: 0 auto;
+              font-size: $p-font ;
+              @media(min-width:320px) and (max-width:767px){
+                width: 70%;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // start about
+.about{
+.container{
+.row{
+  .col-lg-7{
+    text-align: center;
+    img{
+      height: 550px;
+      margin: 0 auto;
+      @media(min-width:320px) and (max-width:767px){
+        height: 300px;
+      }
+      // @media(max-width:767px){
+        
+      // }
+    }
+    
+  }
+  .col-lg-5{
+    .main{
+      h2{
+        @extend  %heading;
+      }
+      p{
+
+      }
+      button{
+        a{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+}
+}

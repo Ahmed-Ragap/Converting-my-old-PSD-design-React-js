@@ -1,0 +1,135 @@
+
+// start team
+
+.team{ 
+    .container{ 
+      h2{
+        @extend  %heading;
+      }
+      .row{ 
+        .item{
+          
+          &:hover{
+           cursor:url("../../img/feture_2.png"), auto !important;
+               img{
+                 border:5px dashed $sec-co !important;
+               }
+             }
+             span, p{
+              color:#000
+             }
+         
+          .main{
+            overflow: hidden;
+            img{
+              width: 150px;
+              border:5px dashed transparent;
+              @include transition (.4s);
+              
+            }
+            .right_info{
+              text-align: left;
+              h4{
+                color:#000;
+                text-transform: uppercase !important;
+                
+  
+              }
+              span{
+                // font-size: 60px;
+         
+  
+              }
+              .rate{
+                i{
+                  color:$sec-co
+                }
+              }
+            }
+          }
+          p{
+            
+          }
+        }
+      }
+    }
+    // to stop or delete arrow nav next prev
+    // .owl-nav{
+    //   display: none !important;
+    // }
+  
+  }
+  .swiper-button-prev, .swiper-button-next
+  {
+      padding: 0 30px;
+      
+  }
+  .swiper-button-prev:after,
+   .swiper-button-next:after{
+    color:$bg-co;
+  font-size:2rem
+   }
+
+  
+  // start how_we_do_it
+  .how_we_do_it{
+    position: relative;
+    overflow: hidden;
+   height: 500px;
+   width: 100%;
+   margin-bottom: -150px; 
+   clip-path: polygon(0 0, 100% 0, 100% 70%, 12% 93%, 1% 84%, 0 83%);
+   background:url('../../img/6.jpg') ;
+   background-position:center;
+   background-attachment: fixed;
+  //  @include border-R(80px);
+   border-top-right-radius: 30px;
+   &::after{
+    position: absolute;
+    content:'';
+   bottom:0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color:rgba($bg-co, .8);
+  }
+   @media(max-width:499px){
+    clip-path: none;
+    border-top-right-radius: 0 ;
+   
+  }
+  
+  .container{
+    position: relative;
+    z-index: 2;
+      padding: 100px 0;
+      h2, h3, span{
+        color: $tit-co;
+      }
+      h2{
+        @extend  %heading;
+        
+   span{
+      display: inline-block;
+     
+      }
+      .row{
+        .col-sm-12{  
+          h3{
+           
+          }
+          button{
+            // background-color:transparent;
+            a{
+  
+            }
+          }
+        }
+      }
+    }
+  }
+  }  
+  footer{
+    // margin-top: -150px ;
+  }
+  

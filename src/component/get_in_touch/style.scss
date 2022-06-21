@@ -1,0 +1,128 @@
+footer{    
+
+    position: relative;
+   overflow: hidden; 
+ width: 100%;   
+    clip-path: polygon(12% 13%, 100% 0, 100% 100%, 0 100%, 0 18%, 0 8%);
+    background-image:url('../../img/7.jpg') ;
+   background-position:center;
+   background-size:cover;
+   background-attachment:fixed;
+   @media(max-width:991px){
+   clip-path:none;
+ 
+ }
+  
+   &::after{ 
+    position: absolute;
+    content:''; 
+   bottom:0;
+   left: 0; 
+   width: 100%; 
+   height: 100%;
+  background-color:rgba($bg-co, .4);
+   z-index: -1;
+  }
+  
+ 
+ 
+  .container{
+    padding-top: 150px; 
+    position: relative; 
+    @media(max-width:499px){
+      padding-top:30px;
+    }
+    h2{
+  @extend %heading;
+
+    }
+    .row{
+      .col-md-6{
+        .main{ 
+          .info{
+          //  padding-top:10px;
+            i{
+              margin-right: 7px;
+              color:$sec-co;
+              font-size: $h-font;
+            }
+            span{
+  
+            }
+          }
+          .socail{
+            a{  
+              margin: 0 10px;
+               color:#4867aa ; 
+              i{
+                 font-size: $h-font + 10px;
+               
+              }
+            }
+            a:nth-of-type(2){
+              color:#1da1f2 ;  
+            }
+            a:nth-of-type(3){
+              color:#1d2226 ;
+            }
+            a:nth-of-type(4){
+              color:#ea4335 ;
+            }
+          }
+          iframe{
+            width: 100%;
+            min-height: 300px;
+          }
+        }
+        // right elements
+        h4{
+          margin-bottom: 20px;
+        }
+        input, textarea{
+          margin-top: 10px;
+          width: 100%;
+          padding: 7px;
+          background-color:rgba($tit-co, .9);
+          border:none;
+          @include border-R(6px);
+        }
+        textarea{
+          min-height: 200px;
+          max-height: 250px;
+        //  height: clamp(1rem, 10vw, 2rem);
+  
+        }
+        input[type="submit"]{
+        max-width: 120px;
+        background-color:$sec-co;
+        border:none;
+        color:$tit-co;
+  
+        }
+      }
+    }
+  }
+  .copy_right{
+    // margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgba($bg-co, .8);
+    min-height: 40px;
+    line-height: 3;
+    // @media(max-width:1200px){
+    //   background-color:red
+    // }
+    span, a{
+   color:$tit-co;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+
+  }
+  
+  
+    

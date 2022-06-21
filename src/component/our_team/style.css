@@ -1,0 +1,119 @@
+* {
+  -webkit-box-sizing: border-box;
+  -os-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  outline: none !important;
+  text-transform: capitalize !important;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+}
+
+/*start variables elements to this site*/
+/*
+  $pry-co: #00FFC6;
+$sec-co: #ff5500;
+  $bg-co: #30AADD;
+*/
+/*declare site color*/
+/*end site elements color*/
+.how_we_do_it .container h2, .team .container h2 {
+  font-weight: bold;
+  display: inline-block;
+}
+.how_we_do_it .container h2::after, .team .container h2::after {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  border-radius: 10px 5px;
+  background-color: #F79E02;
+  z-index: -1;
+}
+
+.team .container .row .item:hover {
+  cursor: url("../../img/feture_2.png"), auto !important;
+}
+.team .container .row .item:hover img {
+  border: 5px dashed #F79E02 !important;
+}
+.team .container .row .item span, .team .container .row .item p {
+  color: #000;
+}
+.team .container .row .item .main {
+  overflow: hidden;
+}
+.team .container .row .item .main img {
+  width: 150px;
+  border: 5px dashed transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.team .container .row .item .main .right_info {
+  text-align: left;
+}
+.team .container .row .item .main .right_info h4 {
+  color: #000;
+  text-transform: uppercase !important;
+}
+.team .container .row .item .main .right_info .rate i {
+  color: #F79E02;
+}
+.swiper-button-prev, .swiper-button-next {
+  padding: 0 30px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #0074e1;
+  font-size: 2rem;
+}
+
+.how_we_do_it {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+  margin-bottom: -150px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 12% 93%, 1% 84%, 0 83%);
+          clip-path: polygon(0 0, 100% 0, 100% 70%, 12% 93%, 1% 84%, 0 83%);
+  background: url("../../img/6.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  border-top-right-radius: 30px;
+}
+.how_we_do_it::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 116, 225, 0.8);
+}
+@media (max-width: 499px) {
+  .how_we_do_it {
+    -webkit-clip-path: none;
+            clip-path: none;
+    border-top-right-radius: 0;
+  }
+}
+.how_we_do_it .container {
+  position: relative;
+  z-index: 2;
+  padding: 100px 0;
+}
+.how_we_do_it .container h2, .how_we_do_it .container h3, .how_we_do_it .container span {
+  color: #ffffff;
+}
+.how_we_do_it .container h2 span {
+  display: inline-block;
+}

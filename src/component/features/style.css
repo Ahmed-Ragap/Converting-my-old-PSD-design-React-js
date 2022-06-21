@@ -1,0 +1,115 @@
+* {
+  -webkit-box-sizing: border-box;
+  -os-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  outline: none !important;
+  text-transform: capitalize !important;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+}
+
+/*start variables elements to this site*/
+/*
+  $pry-co: #00FFC6;
+$sec-co: #ff5500;
+  $bg-co: #30AADD;
+*/
+/*declare site color*/
+/*end site elements color*/
+.top_landpage {
+  position: relative;
+  margin-top: 0;
+  margin-left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top_landpage .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.6) !important;
+}
+
+.about .container .row .col-lg-5 .main h2, .fetures .container .title {
+  font-weight: bold;
+  display: inline-block;
+}
+.about .container .row .col-lg-5 .main h2::after, .fetures .container .title::after {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  border-radius: 10px 5px;
+  background-color: #F79E02;
+  z-index: -1;
+}
+
+.top_landpage {
+  background-image: url(../../img/6.jpg);
+  background-attachment: fixed;
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+.top_landpage .overlay {
+  background-color: rgba(247, 158, 2, 0.7) !important;
+}
+.top_landpage .main {
+  max-width: 70vw;
+}
+.top_landpage .main p {
+  color: #eee;
+}
+
+.fetures {
+  -webkit-box-shadow: 1px -70px 72px 27px #fff;
+          box-shadow: 1px -70px 72px 27px #fff;
+  z-index: 2;
+}
+.fetures .container .row .col-md-6 .main img {
+  height: 200px;
+}
+.fetures .container .row .col-md-6 .main img:hover {
+  cursor: url("../../img/feture_1.png"), auto;
+}
+.fetures .container .row .col-md-6 .main p {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .fetures .container .row .col-md-6 .main p {
+    width: 70%;
+  }
+}
+
+.about .container .row .col-lg-7 {
+  text-align: center;
+}
+.about .container .row .col-lg-7 img {
+  height: 550px;
+  margin: 0 auto;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .about .container .row .col-lg-7 img {
+    height: 300px;
+  }
+}
+.about .container .row .col-lg-5 .main button a {
+  text-decoration: none;
+}
